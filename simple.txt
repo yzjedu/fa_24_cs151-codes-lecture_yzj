@@ -1,0 +1,4 @@
+Hello! This is a simple text file.
+It contains several lines, with words that need to be processed.
+Some words have punctuation, like commas, periods, and exclamation marks!
+The goal is to read this file, split the words, and strip punctuation.
