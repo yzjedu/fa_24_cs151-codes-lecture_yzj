@@ -7,6 +7,13 @@ def count_grades_while(grade_list, average):
         index += 1
     return count
 
+def count_grades_range(grade_list, average):
+    count = 0
+    for index in range(len(grade_list)):
+        if grade_list[index] >= average:
+            count += 1
+    return count
+
 def count_grades_for(grade_list, average):
     count = 0
     for grade in grade_list:
