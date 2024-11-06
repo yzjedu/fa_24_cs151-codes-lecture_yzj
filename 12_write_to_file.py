@@ -10,7 +10,15 @@ def write_list_to_file(my_list, filename):
     fd.close()
 
 def main():
-    fruit_list = ['Apple', 'Orange', 'Banana', 'Blueberry']
-    write_list_to_file(fruit_list, "fruit_list.txt")
+    fruit_list = []
+    SENTINEL = 'quit'
+    user_input = ''
+    while user_input != SENTINEL:
+        user_input = input('Enter fruit or type (quit) to end the program: ').lower().strip()
+        if user_input != '' and user_input != SENTINEL:
+            fruit_list.append(user_input)
+
+    if len(fruit_list) != 0:
+        write_list_to_file(fruit_list, "fruit_list.txt")
 
 main()
