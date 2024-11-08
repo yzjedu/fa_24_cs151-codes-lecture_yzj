@@ -1,5 +1,3 @@
-
-
 def print_by_line(my_list):
     # Iterate through each item in the list and print it on a new line
     for item in my_list:
@@ -17,8 +15,8 @@ def find_first(name_list, char):
 def main():
     fruit_list = ['Apple', 'Orange', 'Banana', 'Blueberry']
     print_by_line(fruit_list)
-    name = find_first(fruit_list, 'B')
+    name = find_first(fruit_list, 'Z')
     print('-' * 40)
-    print(f'The first name that starts with B is: {name}')
+    print(f'The first name that starts with Z is: {name}')
 
 main()

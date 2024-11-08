@@ -19,6 +19,8 @@ def main():
     # Print the number of elements in the 'grades' list
     print(len(grades))
 
+    total = sum(grades)
+
     # Print the first 10 elements of the 'grades' list
     print(grades[:10])
 
