@@ -22,6 +22,7 @@ def read_filename():
 
     # Check if the file exists, and if not, ask again until a valid file is entered
     while not os.path.isfile(name):
+        print("That file does not exist. Please try again.")
         name = input("What file do you want to read? ")
 
     # Return the valid filename
