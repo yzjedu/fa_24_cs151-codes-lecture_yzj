@@ -1,4 +1,4 @@
-import string
+
 import random
 # Problem 1
 def read_file_to_list(filename):
@@ -37,7 +37,8 @@ def main():
         again = input("Would you like to play again? (y/n) ").lower().strip()
 
     para = read_file_to_list('simple.txt')
-    print(len(para))
+    print('length of list in the simple.txt is ', len(para))
+
 
 
 # Call the main function to execute the code
