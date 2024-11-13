@@ -37,7 +37,7 @@ def main():
         again = input("Would you like to play again? (y/n) ").lower().strip()
 
     para = read_file_to_list('simple.txt')
-    print('length of list in the simple.txt is ', len(para))
+    print('length of paragraphs in the simple.txt is ', len(para))
 
 
 

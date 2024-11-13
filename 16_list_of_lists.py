@@ -37,35 +37,34 @@ def find_youngest_actress(actresses):
 
 def main():
     # Lecture note 26
-    table = read_file("actresses.txt")
+    a_table = read_file("actresses.txt")
 
-    print(f'first ten winners {table[:10]}')
+    print(f'first ten winners {a_table[:10]}')
 
-    print(f'last ten winners {table[-10:]}')
+    print(f'last ten winners {a_table[-10:]}')
 
-    print(f'20th to 40th winners {table[19:40]}')
+    print(f'20th to 40th winners {a_table[19:40]}')
 
-    print(f'Winners reversed {table[::-1]}')
+    print(f'Winners reversed {a_table[::-1]}')
     print()
 
-    print(f'Year of the first best actress is: {table[0][0]}')
-    print(f'Name of the winner of the 4th best actress is: {table[4][1]}')
+    print(f'Year of the first best actress is: {a_table[0][0]}')
+    print(f'Name of the winner of the 4th best actress is: {a_table[3][1]}')
     print()
 
     print('Age of all actresses')
-    for row in table:
+    for row in a_table:
         print(row[3], end=' ')
     print()
-    for i in range(len(table)):
-        print(table[i][3], end=' ')
+    for i in range(len(a_table)):
+        print(a_table[i][3], end=' : ')
     print('\n')
 
     # Lecture note 27
     year = 1932
-    name = find_name_by_year(table, year)
+    name = find_name_by_year(a_table, year)
     print(f'The name of the winner of the {year} best actress is {name}')
-
-    youngest_actress_data = find_youngest_actress(table)
+    youngest_actress_data = find_youngest_actress(a_table)
     youngest_actress_name = youngest_actress_data[1]
     youngest_actress_age = youngest_actress_data[3]
     print(f'{youngest_actress_name} is the youngest actress to win oscar at the age of {youngest_actress_age}')
