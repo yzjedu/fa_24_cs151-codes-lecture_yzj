@@ -1,5 +1,5 @@
 
-def read_file(filename):
+def read_to_table(filename):
     table = []
 
     try:
