@@ -37,7 +37,7 @@ def find_youngest_actress(actresses):
 
 def main():
     # Lecture note 26
-    a_table = read_file("actresses.txt")
+    a_table = read_to_table("actresses.txt")
 
     print(f'first ten winners {a_table[:10]}')
 
