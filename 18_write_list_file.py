@@ -1,7 +1,7 @@
-def write_from_table(data, output_filename):
+def write_from_table(table, output_filename):
     outfile = open(output_filename, 'w')  # Open file for writing
 
-    for row in data:
+    for row in table:
 
         # Calculate birth year and title length
         birth_year = row[0] - row[3]
