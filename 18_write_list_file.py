@@ -41,6 +41,6 @@ def read_file(filename):
 
 def main():
     table = read_file("actresses.txt")
-    write_table(table, "actresses_updated.txt")
+    write_from_table(table, "actresses_updated.txt")
 
 main()
