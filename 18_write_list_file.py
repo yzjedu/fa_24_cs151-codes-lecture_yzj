@@ -21,7 +21,7 @@ def write_from_table(table, output_filename):
 
     outfile.close()  # Close the file
 
-def read_file(filename):
+def read_to_file(filename):
     table = []
 
     try:
@@ -40,7 +40,7 @@ def read_file(filename):
     return table
 
 def main():
-    table = read_file("actresses.txt")
+    table = read_to_file("actresses.txt")
     write_from_table(table, "actresses_updated.txt")
 
 main()
