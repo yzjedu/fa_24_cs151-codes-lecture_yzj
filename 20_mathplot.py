@@ -1,32 +1,7 @@
 import matplotlib.pyplot as plt
 import random
 
-def plot_line_chart(sum_rolls):
-
-    # Data to display on the graph
-    xdata = list(range(2, 13))  # Creates a list from 2 to 12 to represent possible sums of two dice rolls
-    ydata = sum_rolls  # y-axis data already given as the rolls list
-
-    # Create a line graph by giving x and y data
-    plt.plot(xdata, ydata)  # Custom line and marker styling
-
-    # Add a grid for better readability
-    plt.grid(True)
-
-    # Label the x and y axes
-    plt.xlabel("Die Roll Sum")  # What to write under the x-axis
-    plt.ylabel("Count of Occurrence")  # What to write next to the y-axis
-
-    # Add a title for the chart
-    plt.title("Die Roll Sums vs Count of Occurrence")  # Title of the graph
-
-    # Save the plot to a file for later viewing
-    plt.savefig("line_graph.png")  # Save as an image file
-
-    # Show the plot for immediate feedback
-    plt.show()
-
-def plot_bar_chart(sum_rolls):
+def plot_chart(sum_rolls):
 
     # Data to display on the graph
     xdata = list(range(2, 13))  # Creates a list from 2 to 12 to represent possible sums of two dice rolls
@@ -40,7 +15,7 @@ def plot_bar_chart(sum_rolls):
     plt.ylabel("Count of Occurrence")  # What to write next to the y-axis
 
     # Save the plot to a file for later viewing
-    plt.savefig("bar_graph.png")  # Save as an image file
+    plt.savefig("graph.png")  # Save as an image file
 
     # Show the plot for immediate feedback
     plt.show()
@@ -75,8 +50,7 @@ def main():
     sums_count = roll_distribution(num_rolls)
     print()
     print(f'The list is: {sums_count} \n')
-    plot_bar_chart(sums_count)
-    plot_line_chart(sums_count)
+    plot_chart(sums_count)
     print('\nThank you for using this program\n\n')
 
 main()
