@@ -61,8 +61,5 @@ def main():
     # Output the result
     plot_nationality_distribution(frequency_dict)
 
-    # Output the number of unique words
-    print("The number of unique words is", len(frequency_dict))
-
 # Run the main function
 main()
