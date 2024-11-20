@@ -1,5 +1,4 @@
 import string
-import matplotlib.pyplot as plt
 
 # This function should be implemented to read from the file and return a list of words.
 def read_words_in_file(filename):
