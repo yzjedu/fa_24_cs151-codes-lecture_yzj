@@ -8,7 +8,7 @@ def plot_line_chart(sum_rolls):
     ydata = sum_rolls  # y-axis data already given as the rolls list
 
     # Create a line graph by giving x and y data
-    plt.plot(xdata, ydata, marker='o', linestyle='-', color='b', label="Roll Counts")  # Custom line and marker styling
+    plt.plot(xdata, ydata)  # Custom line and marker styling
 
     # Add a grid for better readability
     plt.grid(True)
@@ -19,9 +19,6 @@ def plot_line_chart(sum_rolls):
 
     # Add a title for the chart
     plt.title("Die Roll Sums vs Count of Occurrence")  # Title of the graph
-
-    # Add a legend
-    plt.legend()
 
     # Save the plot to a file for later viewing
     plt.savefig("line_graph.png")  # Save as an image file
@@ -44,6 +41,10 @@ def plot_bar_chart(sum_rolls):
 
     # Save the plot to a file for later viewing
     plt.savefig("bar_graph.png")  # Save as an image file
+
+    # Show the plot for immediate feedback
+    plt.show()
+
 
 def read_rolls(prompt):
     rolls = input(prompt)
