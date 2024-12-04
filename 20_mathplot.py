@@ -8,7 +8,7 @@ def plot_chart(sum_rolls):
     ydata = sum_rolls  # y-axis data already given as the rolls list
 
     # Create a bar graph by giving x and y data
-    plt.bar(xdata, ydata)  # Argument #1 is x-axis data; #2 is y-axis data
+    plt.plot(xdata, ydata)  # Argument #1 is x-axis data; #2 is y-axis data
 
     # Label the x and y axes
     plt.xlabel("Die Roll Sum")  # What to write under the x-axis
@@ -19,7 +19,6 @@ def plot_chart(sum_rolls):
 
     # Show the plot for immediate feedback
     plt.show()
-
 
 def read_rolls(prompt):
     rolls = input(prompt)

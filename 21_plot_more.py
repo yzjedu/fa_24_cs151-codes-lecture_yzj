@@ -16,9 +16,10 @@ def plot_nationality_distribution(nationality_dict):
 
     # Rotate x-axis labels to make them readable
     plt.xticks(rotation=45, ha="right")  # Rotate labels by 45 degrees
-
+    plt.title("Nationality Distribution")
     # Display the plot
     plt.savefig("nationality_distribution.png")
+    plt.show()
 
     plt.show()
 
