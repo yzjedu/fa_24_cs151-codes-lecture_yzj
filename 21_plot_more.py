@@ -20,6 +20,8 @@ def plot_nationality_distribution(nationality_dict):
     # Display the plot
     plt.savefig("nationality_distribution.png")
 
+    plt.show()
+
 def read_nationalities_in_file(filename):
     nationalities = []
     try:
