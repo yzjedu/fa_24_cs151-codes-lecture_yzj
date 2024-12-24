@@ -51,9 +51,7 @@ def find_by_year_binary(my_list, target):
 def main():
     data = read_file_to_table("actress.txt")
 
-    year = input(
-        f"From what year do you want to know the best actress? ({data[0][0]}-{data[-1][0]}) "
-    )
+    year = input(f"From what year do you want to know the best actress? ({data[0][0]}-{data[-1][0]}) ")
 
     print("Let's try linear search")
     actress = find_by_year_linear(data, year)
